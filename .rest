@@ -11,3 +11,11 @@ GET http://localhost:8080/contacts/644dc9add236c39355fc6c06 HTTP/1.1
 ###
 
 GET https://cse341-hrivera.onrender.com/ HTTP/1.1
+
+###
+
+GET https://cse341-hrivera.onrender.com/contacts/ HTTP/1.1
+
+###
+
+GET https://cse341-hrivera.onrender.com/contacts/644dcaf3d236c39355fc6c09 HTTP/1.1
