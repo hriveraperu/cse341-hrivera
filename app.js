@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 // const MongoClient = require('mongodb').MongoClient;
 const mongodb = require('./db/connect');
 // const professionalRoutes = require('./routes/professional');
-const contactsRoutes = require('./routes/contacts');
+// const contactsRoutes = require('./routes/contacts');
 
 const port = process.env.PORT || 8080;
 const app = express();
