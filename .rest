@@ -19,3 +19,32 @@ GET https://cse341-hrivera.onrender.com/contacts/ HTTP/1.1
 ###
 
 GET https://cse341-hrivera.onrender.com/contacts/644dcaf3d236c39355fc6c09 HTTP/1.1
+
+###
+
+POST http://localhost:8080/contacts HTTP/1.1 
+content-type: application/json
+
+{
+        "firstName": "Hugo",
+        "lastName": "Rivera",
+        "email": "riv22006@byui.edu",
+        "favoriteColor": "Blue",
+        "birthday": "12/28/1986"
+}
+
+### Put contact
+PUT http://localhost:8080/contacts/6459c3623314de751f4a3aa4 HTTP/1.1 
+content-type: application/json
+
+{
+        "firstName": "Giovanny",
+        "lastName": "Rivera",
+        "email": "gioxshaoran@hotmail.com",
+        "favoriteColor": "Blue",
+        "birthday": "12/28/1986"
+}
+
+
+### Delete contact
+DELETE http://localhost:8080/contacts/6459c3623314de751f4a3aa4 HTTP/1.1

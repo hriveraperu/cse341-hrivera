@@ -1,23 +1,22 @@
 const express = require('express');
-const bodyParser = require('body-parser');
-// const MongoClient = require('mongodb').MongoClient;
-const mongodb = require('./db/connect');
-// const professionalRoutes = require('./routes/professional');
-// const contactsRoutes = require('./routes/contacts');
-
-const port = process.env.PORT || 8080;
 const app = express();
+const mongodb = require('./db/connect');
+
+const bodyParser = require('body-parser');
+const port = process.env.PORT || 8080;
+
+//Import Routes
+const contactRoutes = require('./routes/contacts')
+
 
 app
     .use(bodyParser.json())
-    .use((req, res, next) => {
-        res.setHeader('Access-Control-Allow-Origin', '*');
-        next();
-    })
-    // .use('./professional', professionalRoutes);
-    .use('/', require('./routes/contacts'));
 
+//ROUTES
+    .use('/contacts', contactRoutes)
+    
 
+//Connect DB
 mongodb.initDb((err, mongodb) => {
     if (err) {
         console.log(err);
@@ -26,3 +25,5 @@ mongodb.initDb((err, mongodb) => {
         console.log(`Connected to DB and listening on ${port}`);
     }
 });
+
+
