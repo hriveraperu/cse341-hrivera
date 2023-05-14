@@ -4,14 +4,15 @@ import './App.css';
 function App() {
   return (
     <div className="App">      
-      <h1>New Contact</h1>
-      <form>
-        <input type='text' name='firstName'></input>
-        <input type='text' name='lastName'></input>
-        <input type='text' name='email'></input>
-        <input type='text' name='birthdate'></input>
-      </form>
-    
+      <h1>App Frontend Testing</h1>
+      <ul>
+        <li><a href='/'>Home</a></li>
+        <li><a href='https://cse341-hrivera.onrender.com/api-docs'>Api-Docs</a></li>
+        <li><a href='https://github.com/hriveraperu/cse341-hrivera'>GitHub</a></li>
+        <li><a href='https://cse341-hrivera.onrender.com/'>Render</a></li>
+        <li><a href='https://cse341-contacts-frontend.netlify.app/'>Api Testing App</a></li>
+      </ul>
+      
     </div>
   );
 }
