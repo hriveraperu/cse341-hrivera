@@ -2,11 +2,13 @@
     "env": {
         "browser": true,
         "node": true,
-        "es2021": true
+        "es2021": true,
+        "commonjs": true
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "javascript.suggestionActions.enabled:false"
     ],
     "overrides": [
     ],
